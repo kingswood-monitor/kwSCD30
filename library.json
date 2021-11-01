@@ -1,0 +1,29 @@
+{
+	"name": "kwSCD30",
+	"version": "1.0.4",
+	"description": "Ardiono firmware for a Sensirion SCD30 temperature, humidit, and CO2 sensor.",
+	"keywords": "sensor, arduino, temperature, humidity, co2",
+	"repository":
+	{
+		"type": "git",
+		"url": "https://github.com/kingswood-monitor/kwSCD30.git"
+	},
+	"authors":
+	[
+		{
+			"name": "Richard Lyon",
+			"email": "richlyon@mac.com",
+			"url": "https://github.com/kingswood-monitor",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/kingswood-monitor/kwHeltecWifikit32",
+	"dependencies": 
+	{
+        "sparkfun/SparkFun SCD30 Arduino Library": "^1.0.14",
+        "SPI": "*"
+    },
+	"frameworks": "arduino",
+	"platforms": "espressif32"
+}
