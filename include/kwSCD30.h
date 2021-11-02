@@ -10,29 +10,27 @@ typedef struct {
 } __attribute__((__packed__))payload_t;
 
 class kwSCD30
-{  
+{
 public:
 
     kwSCD30();
 
-    bool start();
+    bool start( float temperatureOffset );
     bool dataAvailable();
+    bool hasSCD30();
+    float temperatureOffset();
 
     float temperature();
     uint16_t humidity();
     uint16_t co2();
 
-    void temperature(char *pBuffer);
-    void humidity(char *pBuffer);
-    void co2(char *pBuffer);
-
-    void setTemperatureOffset(float offset);
-
+    bool m_hasSCD30 = false;
+  
 protected:
 
     SCD30 m_scd30;
-    bool m_hasSCD30 = false;
     payload_t m_payload;
+    float m_temperatureOffset;
 };
 
 #endif

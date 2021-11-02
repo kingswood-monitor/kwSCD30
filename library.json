@@ -1,6 +1,6 @@
 {
 	"name": "kwSCD30",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Ardiono firmware for a Sensirion SCD30 temperature, humidit, and CO2 sensor.",
 	"keywords": "sensor, arduino, temperature, humidity, co2",
 	"repository":
