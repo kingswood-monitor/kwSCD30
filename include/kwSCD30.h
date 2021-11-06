@@ -1,6 +1,8 @@
 #ifndef kwSCD30_H
 #define kwSCD30_H
 
+#include <esp32-hal.h>
+
 #include "SparkFun_SCD30_Arduino_Library.h"
 
 typedef struct {

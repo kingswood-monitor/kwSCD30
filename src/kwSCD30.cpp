@@ -13,9 +13,13 @@ bool kwSCD30::start( float temperatureOffset )
 
   if ( m_hasSCD30 )
   {
+    log_i( "[SCD30] Found sensor" );
     m_scd30.setAutoSelfCalibration( true );
     m_scd30.setMeasurementInterval( 2 );
     m_scd30.setTemperatureOffset( 0 );
+  } else
+  {
+    log_d( "[SCD30] Not found" );
   }
   return m_hasSCD30;
 }
